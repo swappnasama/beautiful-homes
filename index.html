@@ -9,10 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,500&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/global.css">
-  <script src="js/global.js"></script>
+  <script src="js/global.js" defer></script>
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+    </script>
 </head>
 <body>
   <header>
@@ -27,11 +32,12 @@
       <nav>
         <div class="close"></div>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#banner">Home</a></li>
           <li><a href="#our-creations">Our Creations</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="button">Login</a> </li>
-          <li><a href="#" class="button">Register</a></li>
+          <li><a href="#industries">Industries</a> </li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contactus-form" class="button">Contact Us</a></li>
+          
         </ul>
       </nav>
       <!-- Social links -->
@@ -67,59 +73,12 @@
           <p>We are Interior designers who believe in Hardwork, Excellence and Trust. Want to renovate or redecorate your home? Leave it to us.</p>
           <a href="#contactus-form" class="button">Contact Us <i class="fa fa-arrow-right fa-1x"></i></a>        
       </div>
-     
-      
     </section>
-    <!--Testimonials Section-->
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <!--Testimonials build using cards-->
-      <article class="cards">
-        <div class="card">
-          <div class="inner-content">
-            <div class="cards-name">
-                <h3>Alex Danvers</h3>
-                <span>Calgary</span>
-            </div>
-            <div class="cards-image">
-                <img src="images/testimonial-1.jpg" alt="swapna">
-            </div>
-            <div class="cards-text">
-              <p>I loved working with Beautiful Homes team.  I would definitely recommend them to anyone.</p>
-            </div>
-        </div>
-        </div>
-        <div class="card">
-            <div class="inner-content">
-              <div class="cards-name">
-                  <h3>Kara Danvers</h3>
-                  <span>Calgary</span>
-              </div>
-              <div class="cards-image">
-                  <img src="images/testimonial-2.jpg" alt="swapna">
-              </div>
-              <div class="cards-text"><p>They made the renovation an amazing experience and attention to detail was phenomenal.</p></div>
-          </div>
-          </div>
-          <div class="card">
-            <div class="inner-content">
-              <div class="cards-name">
-                  <h3>Lena Luthor</h3>
-                  <span>Calgary</span>
-              </div>
-              <div class="cards-image">
-                  <img src="images/testimonial-3.jpg" alt="swapna">
-              </div>
-              <div class="cards-text"><p>Thank you for all your help with our renovation. It's beautiful and everyone loved it. </p></div>
-          </div>
-          </div>
-        
-      </article>
-    </section>
+    
     <!--Our creations section -->
     <section id="our-creations">
       <h2>Our Creations</h2>
-      <article class="image-gallery">
+      <article class="image-gallery wow animate__animated animate__fadeInUp" data-wow-delay="1s" >
         <figure>
           <img src="images/office.jpg" alt="Office Room">
           <figcaption>Office Room</figcaption>
@@ -170,6 +129,77 @@
         </figure>
       </article>
     </section>
+    <!-- Content drawer / Accordian section -->
+    <section id="industries">
+      <h2>Covered Industries</h2>
+      <div class="accordion-wrapper">
+        
+        <button class="accordion">Residential</button>
+        <div class="accordion-content">
+          <p>One of our Residential projects</p>
+          <img src="images/nook-living.jpg" alt="Living Area">
+        </div>
+        
+        <button class="accordion">Commercial</button>
+        <div class="accordion-content">
+          <p>One of our Commercial projects</p>
+          <img src="images/commercial.jpg" alt="Restaurant">
+        </div>
+        
+        <button class="accordion">Industries</button>
+        <div class="accordion-content">
+          <p>One of our Industries projects</p>
+          <img src="images/industrial.jpg" alt="">
+        </div> 
+    </div>
+    </section>
+
+    <!--Testimonials Section-->
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <!--Testimonials build using cards-->
+      <article class="cards">
+        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1s" >
+          <div class="inner-content">
+            <div class="cards-name">
+                <h3>Alex Danvers</h3>
+                <span>Calgary</span>
+            </div>
+            <div class="cards-image">
+                <img src="images/testimonial-1.jpg" alt="swapna">
+            </div>
+            <div class="cards-text">
+              <p>I loved working with Beautiful Homes team.  I would definitely recommend them to anyone.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1s" >
+            <div class="inner-content">
+              <div class="cards-name">
+                  <h3>Kara Danvers</h3>
+                  <span>Calgary</span>
+              </div>
+              <div class="cards-image">
+                  <img src="images/testimonial-2.jpg" alt="swapna">
+              </div>
+              <div class="cards-text"><p>They made the renovation an amazing experience and attention to detail was phenomenal.</p></div>
+          </div>
+          </div>
+          <div class="card wow animate__animated animate__fadeInUp " data-wow-delay="1s" >
+            <div class="inner-content">
+              <div class="cards-name">
+                  <h3>Lena Luthor</h3>
+                  <span>Calgary</span>
+              </div>
+              <div class="cards-image">
+                  <img src="images/testimonial-3.jpg" alt="swapna">
+              </div>
+              <div class="cards-text"><p>Thank you for all your help with our renovation. It's beautiful and everyone loved it. </p></div>
+          </div>
+          </div>
+        
+      </article>
+    </section>
     <!-- contact us section -->
     <section id="contactus-form">
       <article class="contact-info">
@@ -199,30 +229,7 @@
 
       </article>
     </section>
-    <!-- Content drawer / Accordian section -->
-    <section>
-      <h2>Covered Industries</h2>
-      <div class="accordion-wrapper">
-        
-        <button class="accordion">Residential</button>
-        <div class="accordion-content">
-          <p>One of our Residential projects</p>
-          <img src="images/nook-living.jpg" alt="Living Area">
-        </div>
-        
-        <button class="accordion">Commercial</button>
-        <div class="accordion-content">
-          <p>One of our Commercial projects</p>
-          <img src="images/commercial.jpg" alt="Restaurant">
-        </div>
-        
-        <button class="accordion">Industries</button>
-        <div class="accordion-content">
-          <p>One of our Industries projects</p>
-          <img src="images/industrial.jpg" alt="">
-        </div> 
-    </div>
-    </section>
+    
     
   </main>
   <!-- Footer -->

@@ -1,5 +1,3 @@
-
-window.onload = function() {
   const mobileMenu = document.querySelector('.mobile-nav');
   const close= document.querySelector('.close');
   const nav= document.querySelector('nav');
@@ -20,11 +18,9 @@ window.onload = function() {
   //Accordian js
   //variable decleration
   const accordian = document.querySelectorAll(".accordion");
-  const accordianContent=document.querySelectorAll('.accordion-content');
-
-  let i;
+  const accordianContent =document.querySelectorAll('.accordion-content');
   //looping through list of divs conatianing accordian class and applying click event on the one we are clicking
-  for (i = 0; i < accordian.length; i++) {
+  for (let i = 0; i < accordian.length; i++) {
     accordian[i].addEventListener("click", function() {
 
       // Toggle between adding and removing the "active" class,
@@ -61,6 +57,5 @@ window.onload = function() {
     });
   } 
 
-
-};
+ 
 
