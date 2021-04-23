@@ -17,7 +17,8 @@ header{
   font-size:18px;
   font-weight:bold;
   background-color: white;
-  
+}
+.sticky{
   position: fixed;
   top:0;
   left:0;

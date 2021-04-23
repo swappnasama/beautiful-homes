@@ -1,4 +1,4 @@
-  const mobileMenu = document.querySelector('.mobile-nav');
+  const mobileMenu = document.querySelector(".mobile-nav");
   const close= document.querySelector('.close');
   const nav= document.querySelector('nav');
   //opening navigation
@@ -13,6 +13,20 @@
     nav.classList.remove('show');
 
   });
+// on scroll ticky header
+// When the user scrolls the page, execute myFunction
+// Get the header
+const header =document.querySelector("header");
+// Get the offset position of the navbar
+const sticky = header.offsetTop;
+window.onscroll = function() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+
+};
 
 
   //Accordian js
